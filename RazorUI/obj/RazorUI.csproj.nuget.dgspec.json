@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\RazorUI\\RazorUI.csproj": {}
+    "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\RazorUI\\RazorUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\espaciosREST\\espaciosREST.csproj": {
+    "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\espaciosREST\\espaciosREST.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\espaciosREST\\espaciosREST.csproj",
+        "projectUniqueName": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\espaciosREST\\espaciosREST.csproj",
         "projectName": "espaciosREST",
-        "projectPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\espaciosREST\\espaciosREST.csproj",
+        "projectPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\espaciosREST\\espaciosREST.csproj",
         "packagesPath": "C:\\Users\\Natalia Mejia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\espaciosREST\\obj\\",
+        "outputPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\espaciosREST\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Natalia Mejia\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\RazorUI\\RazorUI.csproj": {
+    "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\RazorUI\\RazorUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\RazorUI\\RazorUI.csproj",
+        "projectUniqueName": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\RazorUI\\RazorUI.csproj",
         "projectName": "RazorUI",
-        "projectPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\RazorUI\\RazorUI.csproj",
+        "projectPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\RazorUI\\RazorUI.csproj",
         "packagesPath": "C:\\Users\\Natalia Mejia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\RazorUI\\obj\\",
+        "outputPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\RazorUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Natalia Mejia\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -105,8 +105,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\espaciosREST\\espaciosREST.csproj": {
-                "projectPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\espaciosREST\\espaciosREST.csproj"
+              "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\espaciosREST\\espaciosREST.csproj": {
+                "projectPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\espaciosREST\\espaciosREST.csproj"
               }
             }
           }

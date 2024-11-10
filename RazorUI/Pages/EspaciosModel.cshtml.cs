@@ -8,12 +8,13 @@ namespace RazorUI.Pages
     {
         private readonly EspaciosService _espaciosService;
 
-        public EspaciosModel(EspaciosService espaciosService)
-        {
-            _espaciosService = espaciosService;
-        }
+    public List<EspacioViewModel> Espacios { get; set; }
 
-        public List<EspacioViewModel> Espacios { get; set; }
+    public EspaciosModel(EspaciosService espaciosService)
+    {
+        _espaciosService = espaciosService;
+        Espacios = new List<EspacioViewModel>(); // Initialize here
+    }
 
         public async Task OnGetAsync()
         {

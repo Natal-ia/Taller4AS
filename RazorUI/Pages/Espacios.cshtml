@@ -16,9 +16,16 @@ else
             <h3>@espacio.Nombre</h3>
             <button onclick="mostrarHorarios(@espacio.Id)">Ver horarios</button>
             <div id="horarios-@espacio.Id" style="display:none;">
-                @foreach (var horario in espacio.Horarios)
+                @if (espacio.Horarios != null && espacio.Horarios.Any())
                 {
-                    <p>@horario.Disponibilidad: @horario.HoraInicio - @horario.HoraFin</p>
+                    @foreach (var horario in espacio.Horarios)
+                    {
+                        <p>@horario.Disponibilidad: @horario.HoraInicio - @horario.HoraFin</p>
+                    }
+                }
+                else
+                {
+                    <p>No hay horarios disponibles para este espacio.</p>
                 }
             </div>
         </div>
@@ -34,5 +41,4 @@ else
             }
         }
     </script>
-
 }
