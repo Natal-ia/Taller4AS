@@ -1,6 +1,6 @@
-@cursosREST_HostAddress = http://localhost:5242
+@espaciossREST_HostAddress = http://localhost:5242
 
-GET {{cursosREST_HostAddress}}/weatherforecast/
+GET {{espaciosREST_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

@@ -17,7 +17,7 @@ namespace EventosRest.Controllers
             _espacioDbContext = espacioDbContext ?? throw new ArgumentNullException(nameof(espacioDbContext));
         }
 
-        [HttpGet(Name = "GetCursos")]
+        [HttpGet(Name = "GetEspacios")]
         public async Task<List<Espacio>> Get()
         {
             var espacios = await _espacioDbContext.Espacios.ToListAsync();
@@ -35,5 +35,26 @@ namespace EventosRest.Controllers
             }
             return espacio;
         }
+
+        [HttpGet("ListWithHorarios")]
+        public async Task<List<Espacio>> GetEspaciosConHorarios()
+        {
+            var espacios = await _espacioDbContext.Espacios
+                .Include(e => e.Horarios)  // Incluye los horarios
+                .ToListAsync();
+
+            if (espacios == null || !espacios.Any())
+            {
+                _logger.LogWarning("No se encontraron espacios con horarios.");
+            }
+            else
+            {
+                _logger.LogInformation($"{espacios.Count} espacios cargados con horarios.");
+            }
+
+            return espacios;
+        }
+
     }
+
 }

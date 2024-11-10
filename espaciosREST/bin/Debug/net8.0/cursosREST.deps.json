@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "cursosREST/1.0.0": {
+      "espaciosREST/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "8.0.10",
           "Microsoft.EntityFrameworkCore": "8.0.10",
@@ -14,7 +14,7 @@
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
-          "cursosREST.dll": {}
+          "espaciosREST.dll": {}
         }
       },
       "BouncyCastle.Cryptography/2.3.1": {
@@ -424,7 +424,7 @@
     }
   },
   "libraries": {
-    "cursosREST/1.0.0": {
+    "espaciosREST/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

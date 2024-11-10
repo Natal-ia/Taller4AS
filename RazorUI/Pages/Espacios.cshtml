@@ -1,0 +1,38 @@
+@page
+@model EspaciosModel
+@inject RazorUI.Services.EspaciosService EspaciosService
+
+<h1>Lista de Espacios</h1>
+
+@if (Model.Espacios == null)
+{
+    <p>Cargando...</p>
+}
+else
+{
+    @foreach (var espacio in Model.Espacios)
+    {
+        <div>
+            <h3>@espacio.Nombre</h3>
+            <button onclick="mostrarHorarios(@espacio.Id)">Ver horarios</button>
+            <div id="horarios-@espacio.Id" style="display:none;">
+                @foreach (var horario in espacio.Horarios)
+                {
+                    <p>@horario.Disponibilidad: @horario.HoraInicio - @horario.HoraFin</p>
+                }
+            </div>
+        </div>
+    }
+
+    <script>
+        function mostrarHorarios(espacioId) {
+            var horariosDiv = document.getElementById("horarios-" + espacioId);
+            if (horariosDiv.style.display === "none") {
+                horariosDiv.style.display = "block";
+            } else {
+                horariosDiv.style.display = "none";
+            }
+        }
+    </script>
+
+}

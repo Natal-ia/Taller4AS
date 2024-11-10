@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicol\\Trabajos .NET\\espaciosREST\\cursosREST.csproj": {}
+    "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\espaciosREST\\espaciosREST.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicol\\Trabajos .NET\\espaciosREST\\cursosREST.csproj": {
+    "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\espaciosREST\\espaciosREST.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicol\\Trabajos .NET\\espaciosREST\\cursosREST.csproj",
-        "projectName": "cursosREST",
-        "projectPath": "C:\\Users\\nicol\\Trabajos .NET\\espaciosREST\\cursosREST.csproj",
-        "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicol\\Trabajos .NET\\espaciosREST\\obj\\",
+        "projectUniqueName": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\espaciosREST\\espaciosREST.csproj",
+        "projectName": "espaciosREST",
+        "projectPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\espaciosREST\\espaciosREST.csproj",
+        "packagesPath": "C:\\Users\\Natalia Mejia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS\\espaciosREST\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Natalia Mejia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

@@ -1,10 +1,10 @@
-using Microsoft.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore;
 
-namespace EventosRest.Model
-{
-    public class EspacioDbContext : DbContext
+    namespace EventosRest.Model
     {
-        public EspacioDbContext(DbContextOptions<EspacioDbContext> options) : base(options) { }
-        public DbSet<Espacio> Espacios { get; set; }
+        public class EspacioDbContext : DbContext
+        {
+            public EspacioDbContext(DbContextOptions<EspacioDbContext> options) : base(options) { }
+            public DbSet<Espacio> Espacios { get; set; }
+        }
     }
-}
