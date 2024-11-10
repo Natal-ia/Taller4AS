@@ -11,7 +11,12 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<EspacioDbContext>(options =>
 {
-    options.UseMySQL(builder.Configuration.GetConnectionString("espacios"));
+    var connectionString = builder.Configuration.GetConnectionString("espacios");
+    if (string.IsNullOrEmpty(connectionString))
+    {
+        throw new InvalidOperationException("Connection string 'espacios' is null or empty.");
+    }
+    options.UseMySQL(connectionString);
 });
 
 var app = builder.Build();

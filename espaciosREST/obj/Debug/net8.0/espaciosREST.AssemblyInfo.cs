@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("espaciosREST")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+673f28eb4d5f8baa589d9c9df188a066a0b90a3b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b4682587e814e3eb911257a90e89d415e9e1b8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("espaciosREST")]
 [assembly: System.Reflection.AssemblyTitleAttribute("espaciosREST")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

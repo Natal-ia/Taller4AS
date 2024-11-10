@@ -51,8 +51,7 @@ namespace EventosRest.Controllers
             {
                 _logger.LogInformation($"{espacios.Count} espacios cargados con horarios.");
             }
-
-            return espacios;
+            return espacios!;
         }
 
     }
