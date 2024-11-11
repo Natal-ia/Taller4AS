@@ -54,6 +54,37 @@ namespace EventosRest.Controllers
             return espacios!;
         }
 
+        [HttpPut("UpdateDisponibilidad/{espacioId}/{horarioId}")]
+        public async Task<IActionResult> UpdateDisponibilidadTrue(int espacioId, int horarioId, [FromBody] bool nuevaDisponibilidad)
+        {
+            var espacio = await _espacioDbContext.Espacios
+                .Include(e => e.Horarios)
+                .FirstOrDefaultAsync(e => e.id == espacioId);
+
+            if (espacio == null)
+            {
+                return NotFound($"Espacio con id {espacioId} no encontrado.");
+            }
+
+            var horarioEspacio = espacio.Horarios?.FirstOrDefault(h => h.id == horarioId);
+
+            if (horarioEspacio == null)
+            {
+                return NotFound($"Horario con id {horarioId} no encontrado en el espacio con id {espacioId}.");
+            }
+            horarioEspacio.disponibilidad = nuevaDisponibilidad;
+
+            try
+            {
+                await _espacioDbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al guardar los cambios en la base de datos.");
+                return StatusCode(500, "Hubo un error al actualizar la disponibilidad.");
+            }
+            return NoContent(); 
+        }
     }
 
 }
