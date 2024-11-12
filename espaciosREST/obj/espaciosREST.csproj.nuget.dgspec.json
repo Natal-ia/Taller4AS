@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\espaciosREST\\espaciosREST.csproj": {}
+    "C:\\Users\\Public\\Trabajos .NET\\Taller 4AS 3-tier 2.0\\Taller4AS\\espaciosREST\\espaciosREST.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\espaciosREST\\espaciosREST.csproj": {
+    "C:\\Users\\Public\\Trabajos .NET\\Taller 4AS 3-tier 2.0\\Taller4AS\\espaciosREST\\espaciosREST.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\espaciosREST\\espaciosREST.csproj",
+        "projectUniqueName": "C:\\Users\\Public\\Trabajos .NET\\Taller 4AS 3-tier 2.0\\Taller4AS\\espaciosREST\\espaciosREST.csproj",
         "projectName": "espaciosREST",
-        "projectPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\espaciosREST\\espaciosREST.csproj",
-        "packagesPath": "C:\\Users\\Natalia Mejia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\espaciosREST\\obj\\",
+        "projectPath": "C:\\Users\\Public\\Trabajos .NET\\Taller 4AS 3-tier 2.0\\Taller4AS\\espaciosREST\\espaciosREST.csproj",
+        "packagesPath": "C:\\Users\\Fix\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Public\\Trabajos .NET\\Taller 4AS 3-tier 2.0\\Taller4AS\\espaciosREST\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Natalia Mejia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Fix\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -43,6 +43,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.28.3, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.66.0, )"
+            },
+            "Grpc.Tools": {
+              "target": "Package",
+              "version": "[2.67.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.10, )"

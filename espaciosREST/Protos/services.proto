@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+option csharp_namespace = "servicioDatos";
+import "google/protobuf/duration.proto";
+import "google/protobuf/empty.proto"; 
+
+package servicioDatos;
+
+message Espacio {
+  int32 id = 1;
+  string nombre = 2;
+  string descripcion = 3;
+  google.protobuf.Duration hora_apertura = 4;
+  google.protobuf.Duration hora_cierre = 5;
+  repeated HorarioEspacio horarios = 6; 
+}
+
+message HorarioEspacio {
+    int32 id = 1;
+    bool disponibilidad = 2; 
+    google.protobuf.Duration hora_inicio = 3;
+    google.protobuf.Duration hora_fin = 4;
+    int32 espacio_id = 5;
+}
+
+
+// Mensajes de solicitud y respuesta
+message EspacioIdRequest {
+  int32 id = 1;
+}
+
+message EspaciosResponse {
+  repeated Espacio espacios = 1;
+}
+
+message EspacioResponse {
+  Espacio espacio = 1;
+  bool success = 2;
+  string message = 3;
+}
+
+message DisponibilidadRequest{
+  int32 id_espacio = 1;
+  int32 id_horario = 2;
+}
+
+message DisponibilidadResponse{
+  bool disponibilidad = 1;
+  bool success = 2;
+  string message = 3;
+}
+
+service EspacioService {
+  rpc GetEspacios (google.protobuf.Empty) returns (EspaciosResponse);
+  rpc GetEspacioById (EspacioIdRequest) returns (EspacioResponse);
+  rpc ListWithHorarios (google.protobuf.Empty) returns (EspaciosResponse);
+}
