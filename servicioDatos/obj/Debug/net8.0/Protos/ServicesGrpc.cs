@@ -53,6 +53,10 @@ namespace servicioDatos {
     static readonly grpc::Marshaller<global::servicioDatos.EspacioIdRequest> __Marshaller_servicioDatos_EspacioIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::servicioDatos.EspacioIdRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::servicioDatos.EspacioResponse> __Marshaller_servicioDatos_EspacioResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::servicioDatos.EspacioResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::servicioDatos.DisponibilidadRequest> __Marshaller_servicioDatos_DisponibilidadRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::servicioDatos.DisponibilidadRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::servicioDatos.DisponibilidadResponse> __Marshaller_servicioDatos_DisponibilidadResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::servicioDatos.DisponibilidadResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::servicioDatos.EspaciosResponse> __Method_GetEspacios = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::servicioDatos.EspaciosResponse>(
@@ -77,6 +81,14 @@ namespace servicioDatos {
         "ListWithHorarios",
         __Marshaller_google_protobuf_Empty,
         __Marshaller_servicioDatos_EspaciosResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::servicioDatos.DisponibilidadRequest, global::servicioDatos.DisponibilidadResponse> __Method_UpdateDisponibilidad = new grpc::Method<global::servicioDatos.DisponibilidadRequest, global::servicioDatos.DisponibilidadResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateDisponibilidad",
+        __Marshaller_servicioDatos_DisponibilidadRequest,
+        __Marshaller_servicioDatos_DisponibilidadResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -106,6 +118,12 @@ namespace servicioDatos {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::servicioDatos.DisponibilidadResponse> UpdateDisponibilidad(global::servicioDatos.DisponibilidadRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -116,7 +134,8 @@ namespace servicioDatos {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetEspacios, serviceImpl.GetEspacios)
           .AddMethod(__Method_GetEspacioById, serviceImpl.GetEspacioById)
-          .AddMethod(__Method_ListWithHorarios, serviceImpl.ListWithHorarios).Build();
+          .AddMethod(__Method_ListWithHorarios, serviceImpl.ListWithHorarios)
+          .AddMethod(__Method_UpdateDisponibilidad, serviceImpl.UpdateDisponibilidad).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -129,6 +148,7 @@ namespace servicioDatos {
       serviceBinder.AddMethod(__Method_GetEspacios, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::servicioDatos.EspaciosResponse>(serviceImpl.GetEspacios));
       serviceBinder.AddMethod(__Method_GetEspacioById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::servicioDatos.EspacioIdRequest, global::servicioDatos.EspacioResponse>(serviceImpl.GetEspacioById));
       serviceBinder.AddMethod(__Method_ListWithHorarios, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::servicioDatos.EspaciosResponse>(serviceImpl.ListWithHorarios));
+      serviceBinder.AddMethod(__Method_UpdateDisponibilidad, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::servicioDatos.DisponibilidadRequest, global::servicioDatos.DisponibilidadResponse>(serviceImpl.UpdateDisponibilidad));
     }
 
   }

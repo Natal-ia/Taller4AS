@@ -38,17 +38,19 @@ namespace servicioDatos {
             "EgoKAmlkGAEgASgFIjwKEEVzcGFjaW9zUmVzcG9uc2USKAoIZXNwYWNpb3MY",
             "ASADKAsyFi5zZXJ2aWNpb0RhdG9zLkVzcGFjaW8iXAoPRXNwYWNpb1Jlc3Bv",
             "bnNlEicKB2VzcGFjaW8YASABKAsyFi5zZXJ2aWNpb0RhdG9zLkVzcGFjaW8S",
-            "DwoHc3VjY2VzcxgCIAEoCBIPCgdtZXNzYWdlGAMgASgJIj8KFURpc3Bvbmli",
-            "aWxpZGFkUmVxdWVzdBISCgppZF9lc3BhY2lvGAEgASgFEhIKCmlkX2hvcmFy",
-            "aW8YAiABKAUiUgoWRGlzcG9uaWJpbGlkYWRSZXNwb25zZRIWCg5kaXNwb25p",
-            "YmlsaWRhZBgBIAEoCBIPCgdzdWNjZXNzGAIgASgIEg8KB21lc3NhZ2UYAyAB",
-            "KAky+AEKDkVzcGFjaW9TZXJ2aWNlEkYKC0dldEVzcGFjaW9zEhYuZ29vZ2xl",
-            "LnByb3RvYnVmLkVtcHR5Gh8uc2VydmljaW9EYXRvcy5Fc3BhY2lvc1Jlc3Bv",
-            "bnNlElEKDkdldEVzcGFjaW9CeUlkEh8uc2VydmljaW9EYXRvcy5Fc3BhY2lv",
-            "SWRSZXF1ZXN0Gh4uc2VydmljaW9EYXRvcy5Fc3BhY2lvUmVzcG9uc2USSwoQ",
-            "TGlzdFdpdGhIb3JhcmlvcxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRofLnNl",
-            "cnZpY2lvRGF0b3MuRXNwYWNpb3NSZXNwb25zZUIQqgINc2VydmljaW9EYXRv",
-            "c2IGcHJvdG8z"));
+            "DwoHc3VjY2VzcxgCIAEoCBIPCgdtZXNzYWdlGAMgASgJIlcKFURpc3Bvbmli",
+            "aWxpZGFkUmVxdWVzdBIWCg5kaXNwb25pYmlsaWRhZBgBIAEoCBISCgppZF9l",
+            "c3BhY2lvGAIgASgFEhIKCmlkX2hvcmFyaW8YAyABKAUiUgoWRGlzcG9uaWJp",
+            "bGlkYWRSZXNwb25zZRIWCg5kaXNwb25pYmlsaWRhZBgBIAEoCBIPCgdzdWNj",
+            "ZXNzGAIgASgIEg8KB21lc3NhZ2UYAyABKAky3QIKDkVzcGFjaW9TZXJ2aWNl",
+            "EkYKC0dldEVzcGFjaW9zEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5Gh8uc2Vy",
+            "dmljaW9EYXRvcy5Fc3BhY2lvc1Jlc3BvbnNlElEKDkdldEVzcGFjaW9CeUlk",
+            "Eh8uc2VydmljaW9EYXRvcy5Fc3BhY2lvSWRSZXF1ZXN0Gh4uc2VydmljaW9E",
+            "YXRvcy5Fc3BhY2lvUmVzcG9uc2USSwoQTGlzdFdpdGhIb3JhcmlvcxIWLmdv",
+            "b2dsZS5wcm90b2J1Zi5FbXB0eRofLnNlcnZpY2lvRGF0b3MuRXNwYWNpb3NS",
+            "ZXNwb25zZRJjChRVcGRhdGVEaXNwb25pYmlsaWRhZBIkLnNlcnZpY2lvRGF0",
+            "b3MuRGlzcG9uaWJpbGlkYWRSZXF1ZXN0GiUuc2VydmljaW9EYXRvcy5EaXNw",
+            "b25pYmlsaWRhZFJlc3BvbnNlQhCqAg1zZXJ2aWNpb0RhdG9zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -57,7 +59,7 @@ namespace servicioDatos {
             new pbr::GeneratedClrTypeInfo(typeof(global::servicioDatos.EspacioIdRequest), global::servicioDatos.EspacioIdRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::servicioDatos.EspaciosResponse), global::servicioDatos.EspaciosResponse.Parser, new[]{ "Espacios" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::servicioDatos.EspacioResponse), global::servicioDatos.EspacioResponse.Parser, new[]{ "Espacio", "Success", "Message" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::servicioDatos.DisponibilidadRequest), global::servicioDatos.DisponibilidadRequest.Parser, new[]{ "IdEspacio", "IdHorario" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::servicioDatos.DisponibilidadRequest), global::servicioDatos.DisponibilidadRequest.Parser, new[]{ "Disponibilidad", "IdEspacio", "IdHorario" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::servicioDatos.DisponibilidadResponse), global::servicioDatos.DisponibilidadResponse.Parser, new[]{ "Disponibilidad", "Success", "Message" }, null, null, null, null)
           }));
     }
@@ -1523,6 +1525,7 @@ namespace servicioDatos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DisponibilidadRequest(DisponibilidadRequest other) : this() {
+      disponibilidad_ = other.disponibilidad_;
       idEspacio_ = other.idEspacio_;
       idHorario_ = other.idHorario_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1534,8 +1537,20 @@ namespace servicioDatos {
       return new DisponibilidadRequest(this);
     }
 
+    /// <summary>Field number for the "disponibilidad" field.</summary>
+    public const int DisponibilidadFieldNumber = 1;
+    private bool disponibilidad_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Disponibilidad {
+      get { return disponibilidad_; }
+      set {
+        disponibilidad_ = value;
+      }
+    }
+
     /// <summary>Field number for the "id_espacio" field.</summary>
-    public const int IdEspacioFieldNumber = 1;
+    public const int IdEspacioFieldNumber = 2;
     private int idEspacio_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1547,7 +1562,7 @@ namespace servicioDatos {
     }
 
     /// <summary>Field number for the "id_horario" field.</summary>
-    public const int IdHorarioFieldNumber = 2;
+    public const int IdHorarioFieldNumber = 3;
     private int idHorario_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1573,6 +1588,7 @@ namespace servicioDatos {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Disponibilidad != other.Disponibilidad) return false;
       if (IdEspacio != other.IdEspacio) return false;
       if (IdHorario != other.IdHorario) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1582,6 +1598,7 @@ namespace servicioDatos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (Disponibilidad != false) hash ^= Disponibilidad.GetHashCode();
       if (IdEspacio != 0) hash ^= IdEspacio.GetHashCode();
       if (IdHorario != 0) hash ^= IdHorario.GetHashCode();
       if (_unknownFields != null) {
@@ -1602,12 +1619,16 @@ namespace servicioDatos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (IdEspacio != 0) {
+      if (Disponibilidad != false) {
         output.WriteRawTag(8);
+        output.WriteBool(Disponibilidad);
+      }
+      if (IdEspacio != 0) {
+        output.WriteRawTag(16);
         output.WriteInt32(IdEspacio);
       }
       if (IdHorario != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt32(IdHorario);
       }
       if (_unknownFields != null) {
@@ -1620,12 +1641,16 @@ namespace servicioDatos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (IdEspacio != 0) {
+      if (Disponibilidad != false) {
         output.WriteRawTag(8);
+        output.WriteBool(Disponibilidad);
+      }
+      if (IdEspacio != 0) {
+        output.WriteRawTag(16);
         output.WriteInt32(IdEspacio);
       }
       if (IdHorario != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt32(IdHorario);
       }
       if (_unknownFields != null) {
@@ -1638,6 +1663,9 @@ namespace servicioDatos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (Disponibilidad != false) {
+        size += 1 + 1;
+      }
       if (IdEspacio != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdEspacio);
       }
@@ -1655,6 +1683,9 @@ namespace servicioDatos {
     public void MergeFrom(DisponibilidadRequest other) {
       if (other == null) {
         return;
+      }
+      if (other.Disponibilidad != false) {
+        Disponibilidad = other.Disponibilidad;
       }
       if (other.IdEspacio != 0) {
         IdEspacio = other.IdEspacio;
@@ -1682,10 +1713,14 @@ namespace servicioDatos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            IdEspacio = input.ReadInt32();
+            Disponibilidad = input.ReadBool();
             break;
           }
           case 16: {
+            IdEspacio = input.ReadInt32();
+            break;
+          }
+          case 24: {
             IdHorario = input.ReadInt32();
             break;
           }
@@ -1709,10 +1744,14 @@ namespace servicioDatos {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            IdEspacio = input.ReadInt32();
+            Disponibilidad = input.ReadBool();
             break;
           }
           case 16: {
+            IdEspacio = input.ReadInt32();
+            break;
+          }
+          case 24: {
             IdHorario = input.ReadInt32();
             break;
           }

@@ -103,5 +103,35 @@ namespace EventosRest.Controllers
                 }).ToList()
             }).ToList();
         }
+
+        [HttpPut("UpdateDisponibilidad/{espacioId}/{horarioId}")]
+        public async Task<IActionResult> UpdateDisponibilidad(int espacioId, int horarioId, [FromBody] bool nuevaDisponibilidad)
+        {
+            var request = new DisponibilidadRequest
+            {
+                IdEspacio = espacioId,
+                IdHorario = horarioId,
+                Disponibilidad = nuevaDisponibilidad
+            };
+
+            try
+            {
+                var response = await _grpcClient.UpdateDisponibilidadAsync(request);
+
+                if (!response.Success)
+                {
+                    _logger.LogWarning($"Error al actualizar la disponibilidad: {response.Message}");
+                    return BadRequest(response.Message);
+                }
+
+                return NoContent(); // Actualización exitosa
+            }
+            catch (RpcException ex)
+            {
+                _logger.LogError(ex, "Error al llamar al servicio gRPC.");
+                return StatusCode(500, "Error al comunicarse con el servidor gRPC.");
+            }
+        }
+
     }
 }

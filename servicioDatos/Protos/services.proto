@@ -40,8 +40,9 @@ message EspacioResponse {
 }
 
 message DisponibilidadRequest{
-  int32 id_espacio = 1;
-  int32 id_horario = 2;
+  bool disponibilidad = 1;
+  int32 id_espacio = 2;
+  int32 id_horario = 3;
 }
 
 message DisponibilidadResponse{
@@ -54,4 +55,5 @@ service EspacioService {
   rpc GetEspacios (google.protobuf.Empty) returns (EspaciosResponse);
   rpc GetEspacioById (EspacioIdRequest) returns (EspacioResponse);
   rpc ListWithHorarios (google.protobuf.Empty) returns (EspaciosResponse);
+  rpc UpdateDisponibilidad (DisponibilidadRequest) returns (DisponibilidadResponse);
 }

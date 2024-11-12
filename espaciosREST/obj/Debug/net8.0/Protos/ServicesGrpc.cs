@@ -53,6 +53,10 @@ namespace servicioDatos {
     static readonly grpc::Marshaller<global::servicioDatos.EspacioIdRequest> __Marshaller_servicioDatos_EspacioIdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::servicioDatos.EspacioIdRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::servicioDatos.EspacioResponse> __Marshaller_servicioDatos_EspacioResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::servicioDatos.EspacioResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::servicioDatos.DisponibilidadRequest> __Marshaller_servicioDatos_DisponibilidadRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::servicioDatos.DisponibilidadRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::servicioDatos.DisponibilidadResponse> __Marshaller_servicioDatos_DisponibilidadResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::servicioDatos.DisponibilidadResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::servicioDatos.EspaciosResponse> __Method_GetEspacios = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::servicioDatos.EspaciosResponse>(
@@ -77,6 +81,14 @@ namespace servicioDatos {
         "ListWithHorarios",
         __Marshaller_google_protobuf_Empty,
         __Marshaller_servicioDatos_EspaciosResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::servicioDatos.DisponibilidadRequest, global::servicioDatos.DisponibilidadResponse> __Method_UpdateDisponibilidad = new grpc::Method<global::servicioDatos.DisponibilidadRequest, global::servicioDatos.DisponibilidadResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateDisponibilidad",
+        __Marshaller_servicioDatos_DisponibilidadRequest,
+        __Marshaller_servicioDatos_DisponibilidadResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -170,6 +182,26 @@ namespace servicioDatos {
       public virtual grpc::AsyncUnaryCall<global::servicioDatos.EspaciosResponse> ListWithHorariosAsync(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListWithHorarios, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::servicioDatos.DisponibilidadResponse UpdateDisponibilidad(global::servicioDatos.DisponibilidadRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateDisponibilidad(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::servicioDatos.DisponibilidadResponse UpdateDisponibilidad(global::servicioDatos.DisponibilidadRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateDisponibilidad, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::servicioDatos.DisponibilidadResponse> UpdateDisponibilidadAsync(global::servicioDatos.DisponibilidadRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateDisponibilidadAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::servicioDatos.DisponibilidadResponse> UpdateDisponibilidadAsync(global::servicioDatos.DisponibilidadRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateDisponibilidad, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
