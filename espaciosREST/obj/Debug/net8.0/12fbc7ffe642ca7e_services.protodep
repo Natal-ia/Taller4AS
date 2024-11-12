@@ -1,4 +1,4 @@
 obj\Debug\net8.0\Protos/Services.cs \
-obj\Debug\net8.0\Protos/ServicesGrpc.cs: C:/Users/Fix/.nuget/packages/grpc.tools/2.67.0/build/native/include/google/protobuf/duration.proto\
- C:/Users/Fix/.nuget/packages/grpc.tools/2.67.0/build/native/include/google/protobuf/empty.proto\
+obj\Debug\net8.0\Protos/ServicesGrpc.cs: C:/Users/Natalia Mejia/.nuget/packages/grpc.tools/2.67.0/build/native/include/google/protobuf/duration.proto\
+ C:/Users/Natalia Mejia/.nuget/packages/grpc.tools/2.67.0/build/native/include/google/protobuf/empty.proto\
  Protos/services.proto

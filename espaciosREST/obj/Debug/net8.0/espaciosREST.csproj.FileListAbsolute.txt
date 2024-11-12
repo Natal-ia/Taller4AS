@@ -245,3 +245,6 @@ C:\Users\Public\Trabajos .NET\Taller 4AS 3-tier 2.0\Taller4AS\espaciosREST\obj\D
 C:\Users\Public\Trabajos .NET\Taller 4AS 3-tier 2.0\Taller4AS\espaciosREST\obj\Debug\net8.0\espacios.F36CF624.Up2Date
 C:\Users\Public\Trabajos .NET\Taller 4AS 3-tier 2.0\Taller4AS\espaciosREST\obj\Debug\net8.0\espaciosREST.genruntimeconfig.cache
 C:\Users\Public\Trabajos .NET\Taller 4AS 3-tier 2.0\Taller4AS\espaciosREST\obj\Debug\net8.0\ref\espaciosREST.dll
+C:\Users\Natalia Mejia\OneDrive - Gimnasio Femenino\Desktop\Taller4AS-1\espaciosREST\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\Natalia Mejia\OneDrive - Gimnasio Femenino\Desktop\Taller4AS-1\espaciosREST\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\Natalia Mejia\OneDrive - Gimnasio Femenino\Desktop\Taller4AS-1\espaciosREST\bin\Debug\net8.0\Grpc.Net.Common.dll

@@ -4,41 +4,119 @@
 
 <h1>Lista de Espacios</h1>
 
-@if (Model.Espacios == null)
-{
-    <p>Cargando...</p>
-}
-else
-{
-    @foreach (var espacio in Model.Espacios)
-    {
-        <div>
-            <h3>@espacio.Nombre</h3>
-            <button onclick="mostrarHorarios(@espacio.Id)">Ver horarios</button>
-            <div id="horarios-@espacio.Id" style="display:none;">
-                @if (espacio.Horarios != null && espacio.Horarios.Any())
+<!-- Contenedor para el contenido principal -->
+<div style="display: flex; justify-content: space-between;">
+    <!-- Tabla de Espacios -->
+    <div style="flex: 1; padding-right: 20px;">
+        <table class="table table-bordered" style="background-color: #e0f7fa;">
+            <thead>
+                <tr>
+                    <th>Nombre del Espacio</th>
+                    <th>Horarios</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var espacio in Model.Espacios)
                 {
-                    @foreach (var horario in espacio.Horarios)
-                    {
-                        <p>@horario.Disponibilidad: @horario.HoraInicio - @horario.HoraFin</p>
-                    }
+                    <tr id="espacio-@espacio.Id" onclick="highlightEspacio(@espacio.Id)" style="cursor: pointer; background-color: #e0f7fa;">
+                        <td style="color: black;">
+                            <strong>
+                                @espacio.Nombre
+                                <span style="color: #007bff; font-size: 0.9em;">(Haz clic para ver horarios)</span>
+                            </strong>
+                        </td>
+                        <td style="color: black;">
+                            <div class="horarios-container" style="display: none;" id="horarios-@espacio.Id">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Horario</th>
+                                            <th>Disponibilidad</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var horario in espacio.Horarios)
+                                        {
+                                            var isAvailable = horario.Disponibilidad;
+                                            <tr>
+                                                <td>@horario.HoraInicio - @horario.HoraFin</td>
+                                                <td>
+                                                    <span id="horario-@horario.Id" class="availability-label @(isAvailable ? "text-success" : "text-danger")">
+                                                        @(isAvailable ? "Disponible" : "No Disponible")
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <!-- Button disabled if horario is not available -->
+                                                    <button class="btn btn-primary cart-button" 
+                                                            onclick="addToCart('@espacio.Nombre', '@horario.HoraInicio - @horario.HoraFin', this)"
+                                                            @(isAvailable ? "" : "disabled")>
+                                                        🛒
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
                 }
-                else
-                {
-                    <p>No hay horarios disponibles para este espacio.</p>
-                }
-            </div>
-        </div>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Carrito siempre visible a la derecha, pero no flotante -->
+    <div id="cart" style="width: 300px; border: 1px solid #ccc; padding: 10px; background-color: #e0f7fa; max-height: 90%; overflow-y: auto;">
+        <h3>Carrito de Compras</h3>
+        <ul id="cart-items" style="list-style: none; padding: 0;">
+            <!-- Cart items dynamically populated here -->
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Function to highlight the selected espacio and show its horarios
+    function highlightEspacio(id) {
+        document.querySelectorAll("tr[id^='espacio-']").forEach(el => el.style.backgroundColor = "");
+        document.getElementById(`espacio-${id}`).style.backgroundColor = "#e0f7fa";
+        
+        document.querySelectorAll(".horarios-container").forEach(el => el.style.display = "none");
+        document.getElementById(`horarios-${id}`).style.display = "block";
     }
 
-    <script>
-        function mostrarHorarios(espacioId) {
-            var horariosDiv = document.getElementById("horarios-" + espacioId);
-            if (horariosDiv.style.display === "none") {
-                horariosDiv.style.display = "block";
-            } else {
-                horariosDiv.style.display = "none";
-            }
-        }
-    </script>
-}
+    // Function to add an item to the cart
+    function addToCart(espacioNombre, horario, button) {
+        const cartItems = document.getElementById("cart-items");
+
+        // Create a new cart item entry
+        const item = document.createElement("li");
+        item.textContent = `${espacioNombre} - ${horario}`;
+
+        // Create a delete button for the cart item (Trash icon)
+        const deleteButton = document.createElement("button");
+        deleteButton.innerHTML = "🗑️"; // Trash icon
+        deleteButton.classList.add("btn", "btn-danger", "btn-sm");
+        deleteButton.style.marginLeft = "10px";
+        deleteButton.onclick = function () {
+            cartItems.removeChild(item);  // Remove item from cart
+            resetAddToCartButton(button);  // Reset the add to cart button back to normal
+        };
+
+        // Append the delete button to the cart item
+        item.appendChild(deleteButton);
+
+        // Append the item to the cart
+        cartItems.appendChild(item);
+
+        // Disable the button once added to cart
+        button.innerText = "Añadido al carrito";
+        button.disabled = true; // Disable the button once added to cart
+    }
+
+    // Function to reset the "Add to Cart" button back to its initial state
+    function resetAddToCartButton(button) {
+        button.innerText = "🛒";
+        button.disabled = false;
+    }
+</script>

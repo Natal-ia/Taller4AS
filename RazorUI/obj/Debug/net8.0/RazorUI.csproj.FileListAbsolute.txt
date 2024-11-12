@@ -146,3 +146,6 @@ C:\Users\Natalia Mejia\OneDrive - Gimnasio Femenino\Desktop\Taller4AS-1\RazorUI\
 C:\Users\Natalia Mejia\OneDrive - Gimnasio Femenino\Desktop\Taller4AS-1\RazorUI\obj\Debug\net8.0\RazorUI.pdb
 C:\Users\Natalia Mejia\OneDrive - Gimnasio Femenino\Desktop\Taller4AS-1\RazorUI\obj\Debug\net8.0\RazorUI.genruntimeconfig.cache
 C:\Users\Natalia Mejia\OneDrive - Gimnasio Femenino\Desktop\Taller4AS-1\RazorUI\obj\Debug\net8.0\ref\RazorUI.dll
+C:\Users\Natalia Mejia\OneDrive - Gimnasio Femenino\Desktop\Taller4AS-1\RazorUI\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\Natalia Mejia\OneDrive - Gimnasio Femenino\Desktop\Taller4AS-1\RazorUI\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\Natalia Mejia\OneDrive - Gimnasio Femenino\Desktop\Taller4AS-1\RazorUI\bin\Debug\net8.0\Grpc.Net.Common.dll

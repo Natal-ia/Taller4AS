@@ -2660,19 +2660,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fix\\.nuget\\packages\\": {}
+    "C:\\Users\\Natalia Mejia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Public\\Trabajos .NET\\Taller 4AS 3-tier 2.0\\Taller4AS\\servicioDatos\\servicioDatos.csproj",
+      "projectUniqueName": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\servicioDatos\\servicioDatos.csproj",
       "projectName": "servicioDatos",
-      "projectPath": "C:\\Users\\Public\\Trabajos .NET\\Taller 4AS 3-tier 2.0\\Taller4AS\\servicioDatos\\servicioDatos.csproj",
-      "packagesPath": "C:\\Users\\Fix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Public\\Trabajos .NET\\Taller 4AS 3-tier 2.0\\Taller4AS\\servicioDatos\\obj\\",
+      "projectPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\servicioDatos\\servicioDatos.csproj",
+      "packagesPath": "C:\\Users\\Natalia Mejia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Natalia Mejia\\OneDrive - Gimnasio Femenino\\Desktop\\Taller4AS-1\\servicioDatos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Fix\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Natalia Mejia\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
